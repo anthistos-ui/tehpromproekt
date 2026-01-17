@@ -1,0 +1,92 @@
+<!-- Аналогично usluga1.html, но с другим содержанием -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технологическая документация | ТЕХПРОМПРОЕКТ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* тот же CSS, что и выше */
+        :root { --primary: #555555; --light: #F8F8F8; --dark: #222222; --white: #FFFFFF; --gray-bg: #F5F5F5; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--light); color: var(--dark); line-height: 1.6; padding-bottom: 60px; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { height: 120px; width: auto; }
+        nav ul { display: flex; list-style: none; gap: 15px; flex-wrap: wrap; justify-content: center; }
+        nav a { text-decoration: none; color: var(--dark); font-weight: 500; font-size: 0.95rem; }
+        nav a:hover { color: var(--primary); }
+        h1 { color: var(--primary); margin: 30px 0 20px; font-size: 2rem; }
+        h2 { color: var(--primary); margin: 25px 0 15px; font-size: 1.5rem; }
+        p, li { margin-bottom: 12px; font-size: 1rem; }
+        ul, ol { padding-left: 20px; margin: 15px 0; }
+        .contact-section { background: var(--gray-bg); padding: 30px; margin-top: 40px; border-radius: 8px; }
+        .contact-section h2 { margin-top: 0; }
+        footer { background: var(--dark); color: var(--white); text-align: center; padding: 15px; margin-top: 40px; }
+        @media (max-width: 768px) {
+            .header-content { flex-direction: column; gap: 10px; }
+            nav ul { justify-content: center; }
+        }
+		body {
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8ZGVmcz4KPHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIzMCIgaGVpZ2h0PSIzMCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CiAgPHBhdGggZD0iTSAzMCAwIEwgMCAwIDAgMzAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2RkZCIgc3Ryb2tlLXdpZHRoPSIwLjUiLz4KPC9wYXR0ZXJuPgo8L2RlZnM+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JpZCkiIC8+Cjwvc3ZnPg==') repeat;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="img/logo-dark.svg" alt="ТЕХПРОМПРОЕКТ" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="usluga1.html">Конструкторская документация</a></li>
+                    <li><a href="usluga2.html">Технологическая документация</a></li>
+                    <li><a href="usluga3.html">Технические документы</a></li>
+                    <li><a href="usluga4.html">Проектирование помещений</a></li>
+                    <li><a href="usluga5.html">Акт экспертизы ТПП</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Разработка технологической документации станков и оборудования любой сложности</h1>
+
+        <p>Разработка технологической документации Продукции выполняется согласно ГОСТ 3.1102-2011, оформленной с учетом ГОСТ 3.1129-93 для следующих целей:</p>
+        <ul>
+            <li>подготовка комплекта технологических документов, необходимых для Торгово-Промышленной Палаты РФ для получения акта экспертизы с целью включения Продукции в реестр Российской Промышленной Продукции согласно Постановлению Правительства РФ от 17 июля 2015 года № 719;</li>
+            <li>разработка технологических документов для изготовления новой Продукции;</li>
+            <li>разработка технологических документов, в том числе корректировки иностранной документации, для поставки / приемки Продукции;</li>
+            <li>разработка технологических документов, в том числе корректировки иностранной документации, для ремонта/модернизации Продукции.</li>
+        </ul>
+
+        <h2>Основные цели разработки технологической документации</h2>
+        <ol>
+            <li><strong>Обеспечение единообразия и стандартизации процессов.</strong> ГОСТ 3.1102-2011 определяет стадии разработки документации (например, для опытного образца, серийного производства), а ГОСТ 3.1129-93 устанавливает общие правила записи технологической информации, что позволяет унифицировать подходы к описанию процессов.</li>
+            <li><strong>Описание технологического процесса.</strong> Документация фиксирует последовательность операций, методы обработки, сборки, контроля и других действий, необходимых для получения изделия требуемого качества.</li>
+            <li><strong>Нормирование ресурсов.</strong> В документации указываются нормы расхода материалов, времени на выполнение операций, что позволяет планировать производственные затраты.</li>
+            <li><strong>Обеспечение контроля качества.</strong> Документация включает требования к контролю на различных этапах производства.</li>
+            <li><strong>Организация производственных процессов.</strong> Технологическая документация определяет маршрут изготовления или ремонта изделия по подразделениям предприятия.</li>
+            <li><strong>Сопровождение жизненного цикла продукции.</strong> Документация используется не только для первоначального изготовления, но и для последующего ремонта, модернизации.</li>
+            <li><strong>Упрощение автоматизации производства.</strong> Стандартизированная документация облегчает внедрение систем автоматизированного проектирования и управления производством.</li>
+            <li><strong>Соблюдение правовых и нормативных требований.</strong> Разработка документации в соответствии с ГОСТ позволяет обеспечить соответствие производственных процессов действующим стандартам.</li>
+        </ol>
+
+        <div class="contact-section">
+            <h2>Контакты</h2>
+            <p>123112, г. Москва, Пресненская набережная, д.10 строение 2, офис 43<br>
+            Телефон: <a href="tel:+74956432888">+7 (495) 643-28-88</a><br>
+            Telegram: <a href="https://t.me/+79856432888">+7 (985) 643-28-88</a><br>
+            Email: <a href="mailto:oz@oz.msk.ru">oz@oz.msk.ru</a></p>
+            <p><em>Стоимость и сроки работ согласовываются индивидуально по вашему запросу.</em></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ТЕХПРОМПРОЕКТ. Все права защищены.</p>
+    </footer>
+</body>
+</html>
