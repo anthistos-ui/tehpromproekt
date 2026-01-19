@@ -127,5 +127,31 @@
     <footer>
         <p>&copy; 2026 ТЕХПРОМПРОЕКТ. Все права защищены.</p>
     </footer>
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const header = document.getElementById('header');
+    if (!header) return;
+
+    let lastScrollTop = 0;
+    const mobileBreakpoint = 768;
+
+    window.addEventListener('scroll', function () {
+        // Применяем только на мобильных
+        if (window.innerWidth > mobileBreakpoint) return;
+
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+            // Скроллим вниз → скрываем
+            header.classList.add('header-hidden');
+        } else {
+            // Скроллим вверх → показываем
+            header.classList.remove('header-hidden');
+        }
+
+        lastScrollTop = scrollTop;
+    });
+});
+</script>
 </body>
 </html>
