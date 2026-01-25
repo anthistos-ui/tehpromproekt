@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технические и разрешительные документы | ТЕХПРОМПРОЕКТ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #555555;
+            --light: #F8F8F8;
+            --dark: #222222;
+            --white: #FFFFFF;
+            --gray-bg: #F5F5F5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #dae6f7;
+            background-image: url("image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMjAlIiB2aWV3Qm94PSIwIDAgMTIwMCAxMjAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTEyMDAsNTIuNDdDMTE1OS40LDYxLjMgMTA4Ni42LDc1LjIgOTg5LjQ5LDI1Yy0zNC42LTEyLjMtNjguMy0yNC4xLTEwNC40NS0yOS4zNGMtNzAuMS0xMS43OS0xMzkuMTMtNS45Mi0yMDkuNC0xMy4wOUM1ODMuMzQsNTMuNjcsNTEyLjM0LDMyLjQzLDQzOC42NCwyNS4wNWMtNzAuNDctNC4xOS0xMzYuNDQtMzIuMTMtMjA2LjgtMzcuNUMxNTgsNzguNzIsMTAyLjIsNjguNzUsNTQuMjEsNDYuMjlWMEgwVjEyMEgxMjAwVjUyLjQ3WiIgZmlsbD0iI2U2ZjBmNSIgb3BhY2l0eT0iMC4zIi8+Cjwvc3ZnPg==");
+            background-repeat: repeat-x;
+            background-position: bottom;
+            background-size: 100% 120px;
+            font-family: 'Inter', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo {
+            height: 120px;
+            width: auto;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        h1 {
+            color: var(--primary);
+            margin: 40px 0 30px;
+            font-size: 2.1rem;
+        }
+
+        h2 {
+            color: var(--primary);
+            margin: 30px 0 20px;
+            font-size: 1.5rem;
+        }
+
+        p, li {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        ul, ol {
+            padding-left: 24px;
+            margin: 16px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--gray-bg);
+            font-weight: 600;
+        }
+
+        .content-card {
+            background: var(--light);
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin: 30px 0;
+        }
+
+        .contact-section {
+            background: var(--gray-bg);
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+
+        .contact-section h2 {
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        .header-hidden {
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .content-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <img src="img/logo-dark.svg" alt="ТЕХПРОМПРОЕКТ" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="usluga1.html">Конструкторская документация</a></li>
+                    <li><a href="usluga2.html">Технологическая документация</a></li>
+                    <li><a href="usluga3.html">Технические документы</a></li>
+                    <li><a href="usluga4.html">Проектирование помещений</a></li>
+                    <li><a href="usluga5.html">Акт экспертизы ТПП</a></li>
+                    <li><a href="index.html#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="content-card">
+            <h1>Разработка и оформление технических и разрешительных документов для станков и оборудования</h1>
+
+            <p>Подготовка следующих документов:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Документ</th>
+                        <th>Описание</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Техническое условие</td>
+                        <td>Документ, содержащий требования (совокупность всех показателей, норм, правил и положений) к изделию, его изготовлению, контролю, приемке и поставке, которые нецелесообразно указывать в других конструкторских документах.</td>
+                    </tr>
+                    <tr>
+                        <td>Программа и методика испытаний</td>
+                        <td>Документ, содержащий технические данные, подлежащие проверке при испытаниях изделия, а также порядок и методы их контроля.</td>
+                    </tr>
+                    <tr>
+                        <td>Таблица</td>
+                        <td>Документ, содержащий в зависимости от его назначения соответствующие данные, сведенные в таблицу.</td>
+                    </tr>
+                    <tr>
+                        <td>Эксплуатационные документы</td>
+                        <td>Документы, предназначенные для использования при эксплуатации, обслуживании и ремонте изделия в процессе эксплуатации.</td>
+                    </tr>
+                    <tr>
+                        <td>Ремонтные документы</td>
+                        <td>Документы, содержащие данные для проведения ремонтных работ на специализированных предприятиях.</td>
+                    </tr>
+                    <tr>
+                        <td>Инструкция</td>
+                        <td>Документ, содержащий указания и правила, используемые при изготовлении изделия (сборке, регулировке, контроле, приемке и т.п.).</td>
+                    </tr>
+                    <tr>
+                        <td>Руководство по монтажу, обслуживанию и программированию</td>
+                        <td>Технический документ, который содержит всю необходимую информацию для корректной установки, эксплуатации, настройки, ремонта и программирования.</td>
+                    </tr>
+                    <tr>
+                        <td>Требования по подключению к энергоносителям</td>
+                        <td>Комплекс нормативных и технических условий, определяющих подключение Продукции к источникам энергии и рабочим средам для безопасной и корректной эксплуатации.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="contact-section">
+            <h2>Контакты</h2>
+            <div class="contact-info">
+                <p>123112, г. Москва, Пресненская набережная, д.10 строение 2, офис 43<br>
+                Телефон: <a href="tel:+74956432888">+7 (495) 643-28-88</a><br>
+                Telegram: <a href="https://t.me/+79856432888">+7 (985) 643-28-88</a><br>
+                Email: <a href="mailto:oz@oz.msk.ru">oz@oz.msk.ru</a></p>
+                <p><em>Стоимость и сроки работ согласовываются индивидуально по вашему запросу.</em></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ТЕХПРОМПРОЕКТ. Все права защищены.</p>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const header = document.getElementById('header');
+        if (!header) return;
+        let lastScrollTop = 0;
+        const mobileBreakpoint = 768;
+        window.addEventListener('scroll', function () {
+            if (window.innerWidth > mobileBreakpoint) return;
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                header.classList.add('header-hidden');
+            } else {
+                header.classList.remove('header-hidden');
+            }
+            lastScrollTop = scrollTop;
+        });
+    });
+    </script>
+</body>
+</html>
